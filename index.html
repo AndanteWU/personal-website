@@ -12,22 +12,25 @@
     <nav class="nav">
       <a class="brand" href="#home" aria-label="返回首页">
         <span class="brand-mark">W</span>
-        <span>武宬志</span>
+        <span data-zh="武宬志" data-en="Wuchengzhi">武宬志</span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="nav-actions">
+        <button class="lang-toggle" type="button" aria-label="切换语言" data-zh="中文 / EN" data-en="EN / 中文">中文 / EN</button>
+        <button class="nav-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
 
       <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" data-zh="关于我" data-en="About">关于我</a>
+        <a href="#education" data-zh="教育背景" data-en="Education">教育背景</a>
+        <a href="#skills" data-zh="技能" data-en="Skills">技能</a>
+        <a href="#projects" data-zh="项目" data-en="Projects">项目</a>
+        <a href="#certificates" data-zh="证书" data-en="Certificates">证书</a>
+        <a href="#contact" data-zh="联系" data-en="Contact">联系</a>
       </div>
     </nav>
   </header>
@@ -35,50 +38,53 @@
   <main>
     <section class="hero section" id="home">
       <div class="hero-content">
-        <p class="eyebrow">Personal Portfolio · Internship Profile</p>
-        <h1>武宬志</h1>
-        <p class="hero-subtitle">投资研究、资本市场与科技产业方向</p>
-        <p class="hero-subtitle-en">Finance student exploring investment research, capital markets, and technology-driven industries.</p>
-        <p class="hero-text">
-          我关注国际金融、资本市场、AI 与半导体行业研究，希望将金融分析框架、数据处理工具和 AI 辅助研究方法结合起来，支持更高效的资料整理、市场跟踪和研究表达。
+        <p class="eyebrow" data-zh="个人主页 · 实习展示" data-en="Personal Portfolio · Internship Profile">个人主页 · 实习展示</p>
+        <h1 data-zh="武宬志" data-en="Wuchengzhi">武宬志</h1>
+        <p class="hero-subtitle" data-zh="金融学本科生 · 投资研究与资本市场方向" data-en="Finance Student · Investment Research & Capital Markets">金融学本科生 · 投资研究与资本市场方向</p>
+        <p class="hero-subtitle-en" data-zh="关注国际金融、资本市场、AI 与半导体行业研究。" data-en="Focused on international finance, capital markets, AI, and semiconductor industry research.">关注国际金融、资本市场、AI 与半导体行业研究。</p>
+        <p class="hero-text" data-zh="希望在实习中参与信息整理、数据处理和研究输出，用清晰的逻辑和高效的工具支持投资研究工作。" data-en="I hope to support investment research through structured information collection, data processing, and clear research output.">
+          希望在实习中参与信息整理、数据处理和研究输出，用清晰的逻辑和高效的工具支持投资研究工作。
         </p>
         <div class="hero-facts" aria-label="个人概览">
           <div>
-            <span>School</span>
-            <strong>首都经济贸易大学</strong>
+            <span data-zh="学校" data-en="School">学校</span>
+            <strong data-zh="首都经济贸易大学" data-en="Capital University of Economics and Business">首都经济贸易大学</strong>
           </div>
           <div>
-            <span>Major</span>
-            <strong>金融学(国际金融英文班)</strong>
+            <span data-zh="专业" data-en="Major">专业</span>
+            <strong data-zh="金融学 · 大二" data-en="Finance · Sophomore">金融学 · 大二</strong>
           </div>
           <div>
-            <span>Target</span>
-            <strong>投资研究实习</strong>
+            <span data-zh="方向" data-en="Target">方向</span>
+            <strong data-zh="投资研究实习" data-en="Investment Research Internship">投资研究实习</strong>
           </div>
         </div>
         <div class="hero-actions">
-          <a class="btn primary" href="#projects">查看项目 / Projects</a>
-          <a class="btn secondary" href="#resume">查看简历 / Resume</a>
+          <a class="btn primary" href="#projects" data-zh="查看项目" data-en="View Projects">查看项目</a>
+          <a class="btn secondary" href="#resume" data-zh="查看简历" data-en="View Resume">查看简历</a>
         </div>
       </div>
 
       <aside class="hero-panel" aria-label="实习能力概览">
         <div class="hero-card-heading">
-          <span>Research Support</span>
-          <strong>我可以承担的研究支持工作</strong>
+          <span data-zh="实习支持" data-en="Internship Support">实习支持</span>
+          <strong data-zh="可支持的实习工作" data-en="Work I Can Support">可支持的实习工作</strong>
         </div>
         <ul class="hero-list">
           <li>
-            <span>Research</span>
-            <strong>上市公司公告、财务报告、券商研报梳理</strong>
+            <span data-zh="信息整理" data-en="Information">信息整理</span>
+            <strong data-zh="公告、财报、研报要点归纳" data-en="Disclosures, financial reports, and research notes">公告、财报、研报要点归纳</strong>
+            <small data-zh="把分散资料整理成清晰的事件线索、公司信息和行业观察。" data-en="Organize scattered materials into clear event tracks, company notes, and industry observations.">把分散资料整理成清晰的事件线索、公司信息和行业观察。</small>
           </li>
           <li>
-            <span>Data</span>
-            <strong>Excel 清洗整理、基础 Python 数据分析</strong>
+            <span data-zh="数据处理" data-en="Data">数据处理</span>
+            <strong data-zh="Excel 清洗汇总与 Python 基础分析" data-en="Excel cleaning and basic Python analysis">Excel 清洗汇总与 Python 基础分析</strong>
+            <small data-zh="支持基础数据清洗、分类、汇总和可视化前的数据准备。" data-en="Support data cleaning, classification, summary, and preparation for basic visualization.">支持基础数据清洗、分类、汇总和可视化前的数据准备。</small>
           </li>
           <li>
-            <span>Output</span>
-            <strong>行业跟踪、公司梳理、研究简报撰写</strong>
+            <span data-zh="研究输出" data-en="Output">研究输出</span>
+            <strong data-zh="研究摘要、图表与 PPT 支持" data-en="Research summaries, charts, and slides">研究摘要、图表与 PPT 支持</strong>
+            <small data-zh="把资料和数据转化为结构化文字、图表和展示页面。" data-en="Turn materials and data into structured writing, charts, and presentation pages.">把资料和数据转化为结构化文字、图表和展示页面。</small>
           </li>
         </ul>
       </aside>
@@ -86,68 +92,67 @@
 
     <section class="section about" id="about">
       <div class="section-heading">
-        <p class="eyebrow">About Me / 关于我</p>
-        <h2>兼具金融视角与技术学习能力</h2>
-        <p class="section-subtitle">我希望把金融理论学习、市场观察和数据工具结合起来，逐步形成面向投资研究岗位的基础能力。</p>
+        <p class="eyebrow" data-zh="关于我" data-en="About Me">关于我</p>
+        <h2 data-zh="保持市场敏感度，也重视工具效率" data-en="Market awareness with practical tool skills">保持市场敏感度，也重视工具效率</h2>
+        <p class="section-subtitle" data-zh="我的学习兴趣集中在国际金融、资本市场、投资研究、AI 和半导体行业研究。" data-en="My interests focus on international finance, capital markets, investment research, AI, and semiconductor industries.">我的学习兴趣集中在国际金融、资本市场、投资研究、AI 和半导体行业研究。</p>
       </div>
       <div class="about-grid">
-        <p>
-          我目前就读于首都经济贸易大学金融学（国际金融英文班）专业。相比单纯学习理论，我更希望把课堂上的金融知识和真实市场结合起来，因此平时会关注 A 股、美股和全球资本市场动态，也会阅读上市公司公告、财务报告和券商研究报告。
+        <p data-zh="我习惯从公开信息开始理解市场：阅读公司公告、财务报告和券商研报，先梳理事实，再思考行业变化、公司经营和市场预期之间的关系。" data-en="I usually start from public information: company announcements, financial reports, and brokerage research. I first clarify the facts, then think about the links between industry changes, company operations, and market expectations.">
+          我习惯从公开信息开始理解市场：阅读公司公告、财务报告和券商研报，先梳理事实，再思考行业变化、公司经营和市场预期之间的关系。
         </p>
-        <p>
-          在工具层面，我正在强化 Python 数据分析、Excel 数据整理、PowerPoint 展示和 AI 工具辅助研究能力。我的目标是在实习中承担资料搜集、数据整理、行业跟踪、基础建模和报告撰写等工作，用更清晰的逻辑理解市场，用更高效的工具支持研究判断。
+        <p data-zh="同时，我在持续练习 Excel、Python、PowerPoint 和 AI 工具，希望把资料整理、数据处理和报告表达做得更高效、更清楚。" data-en="I am also improving my skills in Excel, Python, PowerPoint, and AI tools, aiming to make information organization, data processing, and report presentation more efficient and clear.">
+          同时，我在持续练习 Excel、Python、PowerPoint 和 AI 工具，希望把资料整理、数据处理和报告表达做得更高效、更清楚。
         </p>
       </div>
       <div class="about-detail-grid">
         <article class="about-detail">
           <span>01</span>
-          <h3>研究习惯</h3>
-          <p>关注 A 股、美股和全球资本市场动态，重视从公告、财报和研报中建立事实基础，再形成自己的研究框架。</p>
+          <h3 data-zh="学习兴趣" data-en="Learning Interests">学习兴趣</h3>
+          <p data-zh="关注国际金融、资本市场和科技产业，尤其对 AI 与半导体行业的商业变化和投资逻辑感兴趣。" data-en="Interested in international finance, capital markets, and technology sectors, especially the business changes and investment logic in AI and semiconductors.">关注国际金融、资本市场和科技产业，尤其对 AI 与半导体行业的商业变化和投资逻辑感兴趣。</p>
         </article>
         <article class="about-detail">
           <span>02</span>
-          <h3>数据与工具</h3>
-          <p>能够使用 Excel 做数据清洗和整理，使用 Python 进行基础数据分析，并尝试用 AI 工具提升资料归纳和代码实现效率。</p>
+          <h3 data-zh="研究习惯" data-en="Research Habits">研究习惯</h3>
+          <p data-zh="重视资料来源和逻辑链条，倾向于把公告、财报、研报和市场新闻整理成可追踪的研究笔记。" data-en="I value sources and reasoning, and prefer turning disclosures, reports, research notes, and market news into trackable research notes.">重视资料来源和逻辑链条，倾向于把公告、财报、研报和市场新闻整理成可追踪的研究笔记。</p>
         </article>
         <article class="about-detail">
           <span>03</span>
-          <h3>实习目标</h3>
-          <p>希望进入投资研究、资本市场或科技行业研究相关岗位，在真实项目中提升行业理解、逻辑表达和专业交付能力。</p>
+          <h3 data-zh="工具学习" data-en="Tool Learning">工具学习</h3>
+          <p data-zh="通过 Python、Excel 和 AI 工具提升数据处理、资料归纳和 Demo 搭建能力。" data-en="I use Python, Excel, and AI tools to improve data processing, information summarization, and demo-building capabilities.">通过 Python、Excel 和 AI 工具提升数据处理、资料归纳和 Demo 搭建能力。</p>
         </article>
       </div>
     </section>
 
     <section class="section photos" id="life">
       <div class="section-heading">
-        <p class="eyebrow">Beyond Research</p>
-        <h2>保持好奇，也保持行动力</h2>
-        <p class="section-subtitle">Beyond coursework and research, I value discipline, teamwork, and observing the world directly.</p>
+        <p class="eyebrow" data-zh="生活照片" data-en="Life">生活照片</p>
+        <h2 data-zh="保持好奇，也保持行动力" data-en="Curiosity with action">保持好奇，也保持行动力</h2>
+        <p class="section-subtitle" data-zh="课业与研究之外，我也重视观察、运动和团队协作。" data-en="Beyond coursework and research, I value observation, sports, and teamwork.">课业与研究之外，我也重视观察、运动和团队协作。</p>
       </div>
       <div class="photo-grid">
         <figure class="photo-card tall">
           <img src="assets/life-photo-hongkong.jpg" alt="武宬志在香港街头的生活照">
-          <figcaption>香港街头观察 / City observation in Hong Kong</figcaption>
+          <figcaption data-zh="香港街头观察" data-en="City observation in Hong Kong">香港街头观察</figcaption>
         </figure>
         <figure class="photo-card">
           <img src="assets/life-photo-basketball.jpg" alt="武宬志参加篮球比赛的照片">
-          <figcaption>篮球比赛现场 / Basketball game moment</figcaption>
+          <figcaption data-zh="篮球比赛现场" data-en="Basketball game moment">篮球比赛现场</figcaption>
         </figure>
       </div>
     </section>
 
     <section class="section split" id="education">
       <div class="section-heading">
-        <p class="eyebrow">Education / 教育背景</p>
-        <h2>教育背景</h2>
+        <p class="eyebrow" data-zh="教育背景" data-en="Education">教育背景</p>
+        <h2 data-zh="教育背景与核心课程" data-en="Education and Core Coursework">教育背景与核心课程</h2>
       </div>
       <div class="timeline">
         <article class="timeline-item">
           <div class="timeline-dot"></div>
           <div>
-            <h3>首都经济贸易大学</h3>
-            <p>金融学（国际金融英文班） · 大二</p>
-            <span>Capital University of Economics and Business · Finance · Sophomore</span>
-            <p class="timeline-note">重点学习金融市场、国际金融、投资分析及相关数据工具。</p>
+            <h3 data-zh="首都经济贸易大学" data-en="Capital University of Economics and Business">首都经济贸易大学</h3>
+            <p data-zh="金融学（国际金融英文班） · 大二" data-en="Finance, International Finance English Program · Sophomore">金融学（国际金融英文班） · 大二</p>
+            <span data-zh="核心课程：金融市场、国际金融、投资学、公司金融、计量与数据分析相关课程" data-en="Core coursework: Financial Markets, International Finance, Investments, Corporate Finance, Econometrics and data analysis-related courses">核心课程：金融市场、国际金融、投资学、公司金融、计量与数据分析相关课程</span>
           </div>
         </article>
       </div>
@@ -155,30 +160,33 @@
 
     <section class="section" id="skills">
       <div class="section-heading">
-        <p class="eyebrow">Skills / 技能</p>
-        <h2>面向投资研究的工具能力</h2>
-        <p class="section-subtitle">Practical skills for data processing, report writing, and AI-assisted research.</p>
+        <p class="eyebrow" data-zh="技能" data-en="Skills">技能</p>
+        <h2 data-zh="面向实习工作的能力结构" data-en="Skill structure for internship work">面向实习工作的能力结构</h2>
+        <p class="section-subtitle" data-zh="围绕金融研究、数据分析和工具协作三个方向进行积累。" data-en="Built around financial research, data analysis, and tool-assisted workflow.">围绕金融研究、数据分析和工具协作三个方向进行积累。</p>
       </div>
-      <div class="skills-layout">
+      <div class="skills-layout three-columns">
         <div class="skill-group">
-          <h3>工具与能力 / Tools</h3>
-          <div class="tag-list">
-            <span>Python 数据分析</span>
-            <span>Excel 数据整理与分析</span>
-            <span>Word 文档排版</span>
-            <span>PowerPoint 展示制作</span>
-            <span>AI 工具辅助研究</span>
-            <span>财报与公告阅读</span>
-            <span>券商研报整理</span>
-          </div>
+          <h3 data-zh="金融研究能力" data-en="Financial Research">金融研究能力</h3>
+          <ul class="clean-list">
+            <li data-zh="公告、财报、研报阅读" data-en="Reading disclosures, financial reports, and research notes">公告、财报、研报阅读</li>
+            <li data-zh="基金产品与资产配置分析" data-en="Fund product and asset allocation analysis">基金产品与资产配置分析</li>
+            <li data-zh="资本市场事件跟踪" data-en="Capital market event tracking">资本市场事件跟踪</li>
+          </ul>
         </div>
         <div class="skill-group">
-          <h3>研究兴趣 / Research Interests</h3>
+          <h3 data-zh="数据分析能力" data-en="Data Analysis">数据分析能力</h3>
           <ul class="clean-list">
-            <li>国际金融 / International Finance</li>
-            <li>资本市场 / Capital Markets</li>
-            <li>投资研究 / Investment Research</li>
-            <li>AI 与半导体行业研究 / AI & Semiconductor Research</li>
+            <li data-zh="Excel 数据清洗与整理" data-en="Excel data cleaning and organization">Excel 数据清洗与整理</li>
+            <li data-zh="Python 基础数据分析" data-en="Basic data analysis with Python">Python 基础数据分析</li>
+            <li data-zh="图表整理与结果归纳" data-en="Chart preparation and result summary">图表整理与结果归纳</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 data-zh="AI / 办公工具能力" data-en="AI / Office Tools">AI / 办公工具能力</h3>
+          <ul class="clean-list">
+            <li data-zh="AI 工具辅助资料整理" data-en="AI-assisted information organization">AI 工具辅助资料整理</li>
+            <li data-zh="Word 文档排版" data-en="Word document formatting">Word 文档排版</li>
+            <li data-zh="PowerPoint 展示制作" data-en="PowerPoint presentation design">PowerPoint 展示制作</li>
           </ul>
         </div>
       </div>
@@ -186,61 +194,62 @@
 
     <section class="section" id="projects">
       <div class="section-heading">
-        <p class="eyebrow">Projects / 项目经历</p>
-        <h2>以研究问题驱动的项目实践</h2>
-        <p class="section-subtitle">Selected academic and self-directed projects related to investment research and technology learning.</p>
+        <p class="eyebrow" data-zh="项目经历" data-en="Projects">项目经历</p>
+        <h2 data-zh="三个重点项目" data-en="Three Selected Projects">三个重点项目</h2>
+        <p class="section-subtitle" data-zh="聚焦基金研究、市场跟踪和 AI 工具学习。" data-en="Focused on fund research, market tracking, and AI tool learning.">聚焦基金研究、市场跟踪和 AI 工具学习。</p>
       </div>
       <div class="project-grid">
         <article class="project-card">
           <div class="project-index">01</div>
-          <h3>基金投资策略研究</h3>
-          <p>以全球成长精选类 QDII 基金为研究对象，从资产配置、行业配置、重仓股、基金经理投资框架和风险收益特征等角度进行分析，尝试理解基金产品背后的投资逻辑。</p>
-          <span>Investment Strategy Research</span>
+          <h3 data-zh="基金投资策略研究" data-en="Fund Investment Strategy Research">基金投资策略研究</h3>
+          <p data-zh="以易方达全球成长精选混合 QDII 基金为研究对象，梳理投资框架、区域与行业配置、核心持仓逻辑，并分析其风险收益特征。" data-en="Analyzed the E Fund Global Growth Selected Mixed QDII Fund, including its investment framework, regional and sector allocation, key holdings, and risk-return characteristics.">以易方达全球成长精选混合 QDII 基金为研究对象，梳理投资框架、区域与行业配置、核心持仓逻辑，并分析其风险收益特征。</p>
+          <span data-zh="基金研究" data-en="Fund Research">基金研究</span>
         </article>
         <article class="project-card">
           <div class="project-index">02</div>
-          <h3>资本市场跟踪研究</h3>
-          <p>持续关注 A 股、美股及全球资本市场动态，阅读上市公司公告、财务报告和券商研究报告，训练从公开信息中提取行业变化、公司经营状况和市场预期的能力。</p>
-          <span>Capital Market Tracking</span>
+          <h3 data-zh="资本市场跟踪研究" data-en="Capital Market Tracking Research">资本市场跟踪研究</h3>
+          <p data-zh="持续关注 A 股、美股和全球市场动态，整理重要公告、财报信息和券商观点，训练从公开信息中提炼市场线索的能力。" data-en="Tracked A-share, U.S., and global market developments by organizing key announcements, earnings information, and brokerage views to extract useful market signals.">持续关注 A 股、美股和全球市场动态，整理重要公告、财报信息和券商观点，训练从公开信息中提炼市场线索的能力。</p>
+          <span data-zh="市场跟踪" data-en="Market Tracking">市场跟踪</span>
         </article>
         <article class="project-card">
           <div class="project-index">03</div>
-          <h3>AI Agent 学习项目</h3>
-          <p>正在学习使用 Codex、Python 和网页开发工具搭建个人网站与简单 Demo，熟悉从需求定义、代码生成、本地运行到页面优化的完整流程，并探索 AI 工具在金融研究中的应用。</p>
-          <span>AI Agent Prototype</span>
+          <h3 data-zh="AI Agent / Codex 学习项目" data-en="AI Agent / Codex Learning Project">AI Agent / Codex 学习项目</h3>
+          <p data-zh="学习使用 Codex、Python、HTML、CSS 和 JavaScript 搭建简单 Demo，探索 AI 工具在资料整理、网页生成和研究流程辅助中的应用。" data-en="Used Codex, Python, HTML, CSS, and JavaScript to build simple demos and explore how AI tools can support information organization, web creation, and research workflows.">学习使用 Codex、Python、HTML、CSS 和 JavaScript 搭建简单 Demo，探索 AI 工具在资料整理、网页生成和研究流程辅助中的应用。</p>
+          <span data-zh="AI 工具学习" data-en="AI Tool Learning">AI 工具学习</span>
         </article>
       </div>
     </section>
 
     <section class="section certificates" id="certificates">
       <div class="section-heading">
-        <p class="eyebrow">Certificates / 证书</p>
-        <h2>证书与学习证明</h2>
-        <p class="section-subtitle">Credentials that reflect programming foundation, network technology, and Python data analysis learning.</p>
+        <p class="eyebrow" data-zh="证书" data-en="Certificates">证书</p>
+        <h2 data-zh="证书与学习证明" data-en="Certificates and Credentials">证书与学习证明</h2>
+        <p class="section-subtitle" data-zh="展示已获得的编程、网络技术和数据分析相关证明。" data-en="Selected credentials in programming, network technology, and data analysis.">展示已获得的编程、网络技术和数据分析相关证明。</p>
+        <p class="section-note" data-zh="本页面目前作为本地 Demo 使用。未来公开部署前，请先隐藏证书编号、二维码、身份证号等敏感信息。" data-en="This page is currently a local demo. Before public deployment, certificate numbers, QR codes, ID numbers, and other sensitive information should be hidden.">本页面目前作为本地 Demo 使用。未来公开部署前，请先隐藏证书编号、二维码、身份证号等敏感信息。</p>
       </div>
       <div class="certificate-grid">
         <article class="certificate-card image-certificate">
           <img src="assets/huawei-python-data-analysis-certificate.jpg" alt="华为开发者学堂 Python 数据分析结课证书">
           <div>
-            <h3>华为开发者学堂 Python 数据分析结课证书</h3>
-            <p>Huawei Developers Python Data Analysis Course Certificate</p>
-            <a href="assets/huawei-python-data-analysis-certificate.jpg" target="_blank" rel="noopener">查看大图 / View Image</a>
+            <h3 data-zh="华为开发者学堂 Python 数据分析结课证书" data-en="Huawei Developers Python Data Analysis Course Certificate">华为开发者学堂 Python 数据分析结课证书</h3>
+            <p data-zh="Python 数据分析课程学习证明。" data-en="Course credential for Python data analysis learning.">Python 数据分析课程学习证明。</p>
+            <a href="assets/huawei-python-data-analysis-certificate.jpg" target="_blank" rel="noopener" data-zh="查看大图" data-en="View Image">查看大图</a>
           </div>
         </article>
         <article class="certificate-card image-certificate">
-          <img src="assets/ncre-level-2-c-language.png" alt="全国计算机等级考试二级 C语言证书">
+          <img src="assets/ncre-level-2-c-language.jpg" alt="全国计算机等级考试二级 C语言证书">
           <div>
-            <h3>全国计算机等级考试二级（C语言）</h3>
-            <p>NCRE Level 2, C Programming</p>
-            <a href="assets/ncre-level-2-c-language.png" target="_blank" rel="noopener">查看大图 / View Image</a>
+            <h3 data-zh="全国计算机等级考试二级（C语言）" data-en="NCRE Level 2, C Programming">全国计算机等级考试二级（C语言）</h3>
+            <p data-zh="C 语言程序设计能力证明。" data-en="Credential for C programming foundation.">C 语言程序设计能力证明。</p>
+            <a href="assets/ncre-level-2-c-language.jpg" target="_blank" rel="noopener" data-zh="查看大图" data-en="View Image">查看大图</a>
           </div>
         </article>
         <article class="certificate-card image-certificate">
-          <img src="assets/ncre-level-3-network-technology.png" alt="全国计算机等级考试三级 网络技术证书">
+          <img src="assets/ncre-level-3-network-technology.jpg" alt="全国计算机等级考试三级 网络技术证书">
           <div>
-            <h3>全国计算机等级考试三级（网络技术）</h3>
-            <p>NCRE Level 3, Network Technology</p>
-            <a href="assets/ncre-level-3-network-technology.png" target="_blank" rel="noopener">查看大图 / View Image</a>
+            <h3 data-zh="全国计算机等级考试三级（网络技术）" data-en="NCRE Level 3, Network Technology">全国计算机等级考试三级（网络技术）</h3>
+            <p data-zh="计算机网络技术能力证明。" data-en="Credential for computer network technology.">计算机网络技术能力证明。</p>
+            <a href="assets/ncre-level-3-network-technology.jpg" target="_blank" rel="noopener" data-zh="查看大图" data-en="View Image">查看大图</a>
           </div>
         </article>
       </div>
@@ -248,48 +257,39 @@
 
     <section class="section contact" id="contact">
       <div class="section-heading">
-        <p class="eyebrow">Contact / 联系方式</p>
-        <h2>期待实习与研究机会</h2>
-        <p class="section-subtitle">Open to internship opportunities in investment research, capital markets, and technology industry analysis.</p>
+        <p class="eyebrow" data-zh="联系方式" data-en="Contact">联系方式</p>
+        <h2 data-zh="期待交流实习机会" data-en="Open to internship opportunities">期待交流实习机会</h2>
+        <p class="section-subtitle" data-zh="欢迎联系我交流投资研究、资本市场或科技行业研究相关实习机会。" data-en="Please feel free to contact me for internship opportunities related to investment research, capital markets, or technology industry research.">欢迎联系我交流投资研究、资本市场或科技行业研究相关实习机会。</p>
       </div>
       <div class="contact-box">
         <div>
-          <p>欢迎通过以下邮箱联系我。</p>
-          <p class="en">Please feel free to reach out for internship and research opportunities.</p>
+          <p data-zh="主邮箱用于正式沟通，备用邮箱用于补充联系。" data-en="The primary email is for formal communication, and the backup email is for alternative contact.">主邮箱用于正式沟通，备用邮箱用于补充联系。</p>
         </div>
         <div class="email-list">
-          <a class="btn primary" href="mailto:yourname@163.com">网易邮箱：wcz17610897138@163.com</a>
-          <a class="btn secondary" href="mailto:yourname@gmail.com">Google 邮箱：andantewu2@gmail.com</a>
+          <a class="btn primary" href="mailto:yourname@163.com" data-zh="主邮箱：yourname@163.com" data-en="Primary: yourname@163.com">主邮箱：yourname@163.com</a>
+          <a class="btn secondary backup-email" href="mailto:yourname@gmail.com" data-zh="备用邮箱：yourname@gmail.com" data-en="Backup: yourname@gmail.com">备用邮箱：yourname@gmail.com</a>
         </div>
       </div>
     </section>
 
     <section class="section resume" id="resume">
       <div class="section-heading">
-        <p class="eyebrow">Resume / 简历</p>
-        <h2>个人简历附件</h2>
-        <p class="section-subtitle">The resume is attached at the end of this website for quick review and download.</p>
+        <p class="eyebrow" data-zh="简历" data-en="Resume">简历</p>
+        <h2 data-zh="个人简历附件" data-en="Resume Attachment">个人简历附件</h2>
+        <p class="section-subtitle" data-zh="可在页面末尾直接查看或下载简历。" data-en="The resume can be viewed or downloaded at the end of this page.">可在页面末尾直接查看或下载简历。</p>
       </div>
-     <div class="resume-panel">
-    <p class="resume-note">
-        点击下方按钮可以在新标签页查看简历，或下载 PDF 文件。
-    </p>
-
-    <div class="resume-actions">
-        <a class="btn primary" href="assets/resume-investment-internship.pdf" target="_blank" rel="noopener">
-            打开简历 / Open Resume
-        </a>
-
-        <a class="btn secondary" href="assets/resume-investment-internship.pdf" download>
-            下载简历 / Download
-        </a>
-    </div>
-</div>
+      <div class="resume-panel">
+        <div class="resume-actions">
+          <a class="btn primary" href="assets/resume-investment-internship.pdf" target="_blank" rel="noopener" data-zh="打开简历" data-en="Open Resume">打开简历</a>
+          <a class="btn secondary" href="assets/resume-investment-internship.pdf" download data-zh="下载简历" data-en="Download Resume">下载简历</a>
+        </div>
+        <iframe src="assets/resume-investment-internship.pdf" title="武宬志投资实习简历"></iframe>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2026 武宬志. Built with HTML, CSS and JavaScript.</p>
+    <p data-zh="© 2026 武宬志。使用 HTML、CSS 和 JavaScript 构建。" data-en="© 2026 Wuchengzhi. Built with HTML, CSS and JavaScript.">© 2026 武宬志。使用 HTML、CSS 和 JavaScript 构建。</p>
   </footer>
 
   <button class="back-to-top" type="button" aria-label="返回顶部">↑</button>
