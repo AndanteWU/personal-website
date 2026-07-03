@@ -8,29 +8,31 @@ const translatableElements = document.querySelectorAll("[data-zh][data-en]");
 
 let currentLanguage = "zh";
 
-const closeMenu = () => {
+function closeMenu() {
   if (!navLinks || !navToggle) return;
 
   navLinks.classList.remove("open");
   navToggle.classList.remove("open");
   navToggle.setAttribute("aria-expanded", "false");
-};
+}
 
 if (navToggle && navLinks) {
-  navToggle.addEventListener("click", () => {
+  navToggle.addEventListener("click", function () {
     const isOpen = navLinks.classList.toggle("open");
     navToggle.classList.toggle("open", isOpen);
     navToggle.setAttribute("aria-expanded", String(isOpen));
   });
 }
 
-navItems.forEach((item) => {
+navItems.forEach(function (item) {
   item.addEventListener("click", closeMenu);
 });
 
-const sectionMap = new Map(sections.map((section) => [section.id, section]));
+const sectionMap = new Map(sections.map(function (section) {
+  return [section.id, section];
+}));
 
-const setActiveLink = () => {
+function setActiveLink() {
   const documentBottom = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 8;
   const contactSection = sectionMap.get("contact");
 
@@ -41,7 +43,7 @@ const setActiveLink = () => {
   } else {
     const marker = window.scrollY + Math.min(window.innerHeight * 0.38, 260);
 
-    sections.forEach((section) => {
+    sections.forEach(function (section) {
       const top = section.offsetTop;
       const bottom = top + section.offsetHeight;
 
@@ -51,43 +53,49 @@ const setActiveLink = () => {
     });
   }
 
-  navItems.forEach((item) => {
+  navItems.forEach(function (item) {
     const targetId = item.getAttribute("href").slice(1);
     item.classList.toggle("active", targetId === currentId);
   });
-};
+}
 
-const toggleBackToTop = () => {
+function toggleBackToTop() {
   if (!backToTop) return;
   backToTop.classList.toggle("show", window.scrollY > 500);
-};
+}
 
-const applyLanguage = (language) => {
+function applyLanguage(language) {
   currentLanguage = language;
   document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
+  document.body.setAttribute("data-language", language);
   document.title = language === "zh"
     ? "武宬志 | 金融与科技方向个人网站"
     : "Wuchengzhi | Finance and Technology Portfolio";
 
-  translatableElements.forEach((element) => {
-    const nextText = element.dataset[language];
-    if (nextText) {
+  translatableElements.forEach(function (element) {
+    const nextText = language === "zh"
+      ? element.getAttribute("data-zh")
+      : element.getAttribute("data-en");
+
+    if (nextText !== null) {
       element.textContent = nextText;
     }
   });
 
   if (langToggle) {
+    langToggle.textContent = language === "zh" ? "中文 / EN" : "EN / 中文";
     langToggle.setAttribute("aria-label", language === "zh" ? "切换为英文" : "Switch to Chinese");
   }
-};
+}
 
 if (langToggle) {
-  langToggle.addEventListener("click", () => {
-    applyLanguage(currentLanguage === "zh" ? "en" : "zh");
+  langToggle.addEventListener("click", function () {
+    const nextLanguage = currentLanguage === "zh" ? "en" : "zh";
+    applyLanguage(nextLanguage);
   });
 }
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll", function () {
   setActiveLink();
   toggleBackToTop();
 }, { passive: true });
@@ -95,7 +103,7 @@ window.addEventListener("scroll", () => {
 window.addEventListener("resize", setActiveLink);
 
 if (backToTop) {
-  backToTop.addEventListener("click", () => {
+  backToTop.addEventListener("click", function () {
     window.scrollTo({
       top: 0,
       behavior: "smooth"
