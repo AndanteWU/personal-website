@@ -3,18 +3,26 @@ const navLinks = document.querySelector(".nav-links");
 const navItems = document.querySelectorAll(".nav-links a");
 const sections = Array.from(document.querySelectorAll("main section[id]"));
 const backToTop = document.querySelector(".back-to-top");
+const langToggle = document.querySelector(".lang-toggle");
+const translatableElements = document.querySelectorAll("[data-zh][data-en]");
+
+let currentLanguage = "zh";
 
 const closeMenu = () => {
+  if (!navLinks || !navToggle) return;
+
   navLinks.classList.remove("open");
   navToggle.classList.remove("open");
   navToggle.setAttribute("aria-expanded", "false");
 };
 
-navToggle.addEventListener("click", () => {
-  const isOpen = navLinks.classList.toggle("open");
-  navToggle.classList.toggle("open", isOpen);
-  navToggle.setAttribute("aria-expanded", String(isOpen));
-});
+if (navToggle && navLinks) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("open");
+    navToggle.classList.toggle("open", isOpen);
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+}
 
 navItems.forEach((item) => {
   item.addEventListener("click", closeMenu);
@@ -50,8 +58,34 @@ const setActiveLink = () => {
 };
 
 const toggleBackToTop = () => {
+  if (!backToTop) return;
   backToTop.classList.toggle("show", window.scrollY > 500);
 };
+
+const applyLanguage = (language) => {
+  currentLanguage = language;
+  document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
+  document.title = language === "zh"
+    ? "武宬志 | 金融与科技方向个人网站"
+    : "Wuchengzhi | Finance and Technology Portfolio";
+
+  translatableElements.forEach((element) => {
+    const nextText = element.dataset[language];
+    if (nextText) {
+      element.textContent = nextText;
+    }
+  });
+
+  if (langToggle) {
+    langToggle.setAttribute("aria-label", language === "zh" ? "切换为英文" : "Switch to Chinese");
+  }
+};
+
+if (langToggle) {
+  langToggle.addEventListener("click", () => {
+    applyLanguage(currentLanguage === "zh" ? "en" : "zh");
+  });
+}
 
 window.addEventListener("scroll", () => {
   setActiveLink();
@@ -60,12 +94,15 @@ window.addEventListener("scroll", () => {
 
 window.addEventListener("resize", setActiveLink);
 
-backToTop.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
+if (backToTop) {
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   });
-});
+}
 
+applyLanguage("zh");
 setActiveLink();
 toggleBackToTop();
