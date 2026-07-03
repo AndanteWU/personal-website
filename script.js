@@ -68,10 +68,7 @@ function applyLanguage(language) {
   currentLanguage = language;
   document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
   document.body.setAttribute("data-language", language);
-  document.title = language === "zh"
-    ? "武宬志 | 个人网站"
-    : "Wuchengzhi | Personal Website";
-
+ 
   translatableElements.forEach(function (element) {
     const nextText = language === "zh"
       ? element.getAttribute("data-zh")
