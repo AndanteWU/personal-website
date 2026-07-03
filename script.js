@@ -70,7 +70,7 @@ function applyLanguage(language) {
   document.body.setAttribute("data-language", language);
   document.title = language === "zh"
     ? "武宬志 | 个人网站"
-    : "Wuchengzhi | Portfolio";
+    : "Wuchengzhi | Personal Website";
 
   translatableElements.forEach(function (element) {
     const nextText = language === "zh"
